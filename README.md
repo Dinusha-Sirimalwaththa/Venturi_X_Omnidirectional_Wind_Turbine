@@ -18,4 +18,46 @@ Material selection has been optimized for tropical environmental conditions, str
 
 The completed prototype is designed as a compact, transportable, and experimentally practical wind energy platform suitable for university-level research and performance validation. The project aims to demonstrate the effectiveness of Venturi-assisted wind acceleration and diffuser augmentation in improving wind turbine performance under low wind speed conditions.
 
+Engineering Defense: Why the 46 cm DAWT Cannot Produce 250W
+1. The Kinetic Energy Deficit at Local Wind Speeds
+The fundamental limit of any wind system is the raw kinetic energy available in the air. At the established local average wind speed of 1.46 m/s, the air simply does not carry enough physical mass to generate heavy wattage through a small opening.
+
+Ambient Wind: 1.46 m/s
+
+DAWT Amplified Throat Wind: 3.65 m/s (using a highly optimistic 2.5x multiplier)
+
+Throat Area (46 cm diameter): 0.166 square meters
+
+Total Available Kinetic Power: 0.5 × 1.16 kg/m³ × 0.166 m² × (3.65)³ = 4.69 Watts
+
+Conclusion: Even if the turbine, gearbox, and generator were 100% perfectly efficient (which is physically impossible), the absolute maximum energy entering the system is 4.69W. It is a strict violation of the Law of Conservation of Energy to extract 250W from a 4.69W source.
+
+2. The 21 m/s Velocity Paradox & Aerodynamic Choking
+To mathematically force 250W of electrical output from a 46 cm pipe (factoring in 25% total system efficiency), the wind speed inside the throat must reach 21.75 m/s.
+
+To accelerate the ambient 1.46 m/s wind to 21.75 m/s, the system requires an Area Ratio of nearly 15:1.
+
+The Physical Reality: Constructing an intake funnel large enough to achieve a 15:1 ratio creates a massive flat surface area facing the wind. Instead of smoothly flowing into the throat, the air pressure will instantly build up inside the funnel, creating a high-pressure "wall." The incoming wind will simply bounce off this wall and bypass the turbine completely—a condition known as aerodynamic choking.
+
+3. The RPM vs. Torque Mismatch
+Small-scale 250W generators require high speeds (usually 2000+ RPM) to produce voltage, necessitating a 1:5 gearbox.
+
+The blades will easily spin the gearbox up to 2000 RPM when freewheeling.
+
+However, the moment a 250W electrical load is applied, the internal electromagnetic resistance (cogging torque) of the generator engages.
+
+Because the 3.65 m/s wind only provides about 4.7W of physical pushing force, it will instantly be overpowered by the 250W of magnetic resistance. The blades will completely stall and lock in place.
+
+4. The Sizing Reality Check for a 250W DAWT
+To successfully build a DAWT that outputs 250W in Katugastota's 1.46 m/s ambient wind, we must calculate the required throat size using the realistic 3.65 m/s internal flow and a 25% system efficiency.
+
+Required Kinetic Energy: 1000 Watts
+
+Calculation: 1000 W = 0.5 × 1.16 kg/m³ × Area × (3.65 m/s)³
+
+Required Area: 35.4 square meters
+
+Required Throat Diameter: 6.7 meters (22 feet)
+
+Conclusion: To hit the 250W target in this specific geographic location, the central metal pipe alone would need to be nearly 7 meters wide, with an intake funnel over 20 meters wide. This exceeds the structural and financial scope of a university undergraduate prototype.
 
